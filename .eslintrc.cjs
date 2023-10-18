@@ -10,6 +10,7 @@ module.exports = {
     'plugin:@typescript-eslint/stylistic-type-checked',
     'prettier',
     '@feature-sliced',
+    'eslint-config-prettier',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.ts'],
   parser: '@typescript-eslint/parser',
@@ -26,7 +27,7 @@ module.exports = {
     project: ['./tsconfig.json', './tsconfig.node.json'],
     tsconfigRootDir: './',
   },
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', 'eslint-plugin-prettier'],
   rules: {
     'react-refresh/only-export-components': [
       'warn',
