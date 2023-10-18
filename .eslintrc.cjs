@@ -34,5 +34,13 @@ module.exports = {
     ],
     'react/react-in-jsx-scope': 'off',
     'react/jsx-uses-react': 'off',
+    'prettier/prettier': [
+      'warn',
+      {
+        endOfLine: 'auto',
+      },
+    ],
+    'no-var': 'error',
+    'prefer-const': 'warn',
   },
 };
